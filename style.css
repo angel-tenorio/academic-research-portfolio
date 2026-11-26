@@ -1,0 +1,25 @@
+
+:root {color-scheme:light; --navy:#142940; --ink:#26384b; --muted:#4b5e72; --line:#dbe2e9}
+* {box-sizing:border-box}
+body {margin:0;background:#fff;color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+main,.review {width:min(100% - 2.5rem,66rem);margin:auto}
+.hero {padding:clamp(3rem,8vw,6rem) 0 2.5rem;border-bottom:1px solid var(--line)}
+h1,h2,h3 {color:var(--navy);line-height:1.2;overflow-wrap:anywhere}
+h1 {font-size:clamp(2.3rem,5.8vw,4.25rem);letter-spacing:-.045em;margin:.25em 0}
+h2 {font-size:1.65rem;letter-spacing:-.025em;margin:0 0 .8rem}
+h3 {font-size:1.2rem;margin:.65rem 0}
+p {margin:.55rem 0}
+.label,.meta,.fields,.pending {color:var(--muted)}
+.label {font-size:1.25rem}
+section {padding:2.3rem 0;border-bottom:1px solid var(--line)}
+.grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.card {border:1px solid var(--line);border-radius:.55rem;padding:1.3rem;display:flex;flex-direction:column}
+.actions {margin-top:auto;padding-top:.9rem;display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:baseline}
+a {color:#194c79;text-underline-offset:.2em;font-weight:600}
+a:focus-visible {outline:2px solid #194c79;outline-offset:4px}
+.project {max-width:52rem;padding:2rem 0}
+.project h1 {font-size:clamp(1.75rem,4.5vw,3rem);margin:.6em 0}
+.project section {padding:1.35rem 0}
+.review {padding-top:1rem;color:var(--muted);font-size:.9rem}
+.preview-project {margin:3rem auto;border-top:2px solid var(--line)}
+@media(max-width:43rem){.grid{grid-template-columns:1fr}}
